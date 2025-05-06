@@ -1,0 +1,63 @@
+/* Make sure the body has a white background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; /* White background for all pages */
+  font-family: Arial, sans-serif; /* Optional, for better typography */
+}
+
+/* Style for the Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333; /* Dark background for the navbar */
+  color: white;
+  padding: 15px 20px;
+  z-index: 1000; /* Ensures the navbar stays on top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  height: 5%;
+}
+
+.navbar-logo h2 {
+  margin: 0;
+}
+
+.navbar-toggle {
+  display: none; /* Hide the toggle for now */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.navbar-links a:hover {
+  background-color: #555; /* Hover effect */
+}
+
+/* Active menu (for mobile view or when menu is open) */
+.navbar-links.active {
+  display: block;
+}
+
+/* Spacing for the rest of the page */
+.page-content {
+  padding-top: 80px; /* Ensure content doesn't get hidden behind the fixed navbar */
+}
